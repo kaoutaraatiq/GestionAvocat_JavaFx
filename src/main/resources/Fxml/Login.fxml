@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/styles1.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controllers.LoginController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="200.0" styleClass="logo_container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="380.0" fitWidth="227.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/2.jpg" />
+               </image>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </ImageView>
+         </children>
+      </VBox>
+      <VBox layoutX="235.0" layoutY="35.0" prefHeight="350.0" prefWidth="350.0" styleClass="login_form_container" stylesheets="@../css/styles1.css" AnchorPane.rightAnchor="14.600000000000023" AnchorPane.topAnchor="35.0">
+         <children>
+            <Label text="Login" />
+            <TextField fx:id="tLogin" styleClass="input_field" />
+            <Label text="Password" />
+            <PasswordField fx:id="tPw" styleClass="input_field" />
+            <Button fx:id="btnCon" mnemonicParsing="false" text="sign in" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
